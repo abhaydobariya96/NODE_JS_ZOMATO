@@ -31,5 +31,13 @@ router.put(
     userController.updateUser
 );
 
+/**email send */
+router.post(
+    "/send-mail",
+    validate(userVallidation.sendMail),
+    userController.sendMail
+);
+
+
 
 module.exports = router

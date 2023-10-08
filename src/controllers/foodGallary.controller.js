@@ -3,6 +3,13 @@ const { foodGallaryService } = require("../services")
 const createFoodGallary = async (req, res) => {
     try {
         const reqBody = req.body;
+
+        if (req.file) {
+            reqBody.image = req.file.filename;
+        } else {
+            throw new Error("Food Gallary image is required!");
+        }
+
         const foodGallary = await foodGallaryService.createFoodGallary(reqBody);
         if (!foodGallary) {
             throw new Error("food gallary not found!")

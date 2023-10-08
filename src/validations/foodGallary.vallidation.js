@@ -4,7 +4,7 @@ const Joi = require("joi")
 const createFoodGallary = {
     body: Joi.object().keys({
         food_name: Joi.string().required().trim(),
-        image: Joi.string().required().trim(),
+        image: Joi.string().allow("").trim(),
         food_desc: Joi.string().required().trim(),
         price: Joi.string().required().trim(),
     })

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose")
+const config = require("../config/config")
 
 const foodGallarySchima = new mongoose.Schema(
     {
@@ -21,7 +22,12 @@ const foodGallarySchima = new mongoose.Schema(
     },
     {
         timestamps: true,
-        versionKey: false
+        versionKey: false,
+        toJSON: {
+            transform: function (doc, data) {
+                data.image = `${config.base_url}images/${data.image}`
+            }
+        }
     }
 );
 const foodGallary = mongoose.model("foodGallary", foodGallarySchima)

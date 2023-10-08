@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema(
         },
         address: {
             type: String,
-            trim:true,
+            trim: true,
         },
         country: {
             type: String,
@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema(
     },
     {
         timestamps: true,
-        versionKey: false
+        versionKey: false,
     }
 )
 

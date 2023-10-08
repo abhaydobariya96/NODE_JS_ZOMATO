@@ -1,5 +1,5 @@
 const express = require("express");
-const {stateVallidation} = require("../../validations")
+const { stateVallidation } = require("../../validations")
 const { stateController } = require("../../controllers")
 const validate = require("../../middlewares/validate");
 

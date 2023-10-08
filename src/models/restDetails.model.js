@@ -8,7 +8,7 @@ const restDetailsSchema = new mongoose.Schema(
         },
         rest_address: {
             type: String,
-            trim:true
+            trim: true
         },
         rest_number: {
             type: String,
@@ -25,9 +25,9 @@ const restDetailsSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        ow_details:{
-            type:mongoose.Types.ObjectId,
-            ref:"OwnerDetails"
+        ow_details: {
+            type: mongoose.Types.ObjectId,
+            ref: "OwnerDetails"
         },
         is_active: {
             type: Boolean,

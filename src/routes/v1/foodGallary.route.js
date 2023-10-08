@@ -2,12 +2,14 @@ const express = require("express")
 const foodGallaryVallidation = require("../../validations/foodGallary.vallidation")
 const { foodGallaryController } = require("../../controllers")
 const validate = require("../../middlewares/validate");
+const { upload } = require("../../middlewares/upload");
 
 const router = express.Router();
 
 /**create food gallary */
 router.post(
     "/create-foodGallary",
+    upload.single("image"),
     validate(foodGallaryVallidation.createFoodGallary),
     foodGallaryController.createFoodGallary
 );
