@@ -8,7 +8,6 @@ const createUser = {
         phone: Joi.number().required(),
         password: Joi.string().required().trim(),
         address: Joi.string().required().trim(),
-        country: Joi.string().required().trim(),
     })
 }
 /**list state */
@@ -19,7 +18,6 @@ const getUser = {
         phone: Joi.number().allow(""),
         password: Joi.string().allow("").trim(),
         address: Joi.string().allow("").trim(),
-        country: Joi.string().allow("").trim(),
     })
 }
 

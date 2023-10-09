@@ -22,10 +22,6 @@ const userSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        country: {
-            type: String,
-            trim: true,
-        },
         is_active: {
             type: Boolean,
             default: true

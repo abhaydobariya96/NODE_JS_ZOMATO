@@ -10,7 +10,7 @@ const createState = async (reqBody) => {
 };
 /**list state */
 const getState = async () => {
-    return State.find().populate("country_name", { country: 1 })
+    return State.find().populate("country_name", { country_name: 1 })
 };
 
 /**delete state */

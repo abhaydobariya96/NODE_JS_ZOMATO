@@ -1,5 +1,6 @@
 module.exports.ownerDetailsController = require("./ownerDetails.controller")
 module.exports.restDetailsController = require("./restDetails.controller")
+module.exports.countryController = require("./country.controller")
 module.exports.stateController = require("./state.controller")
 module.exports.cityController = require("./city.controller")
 module.exports.userController = require("./user.controller")

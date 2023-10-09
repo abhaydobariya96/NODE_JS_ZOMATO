@@ -12,7 +12,7 @@ const stateSchema = new mongoose.Schema(
         },
         country_name: {
             type: mongoose.Types.ObjectId,
-            ref: "user"
+            ref: "country"
         },
         is_active: {
             type: Boolean,

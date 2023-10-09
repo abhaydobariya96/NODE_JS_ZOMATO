@@ -1,5 +1,6 @@
 module.exports.ownerDetailsService = require("./ownerDetails.service")
 module.exports.restDetailsService = require("./restDetails.service")
+module.exports.countryService = require("./country.service")
 module.exports.stateService = require("./state.service")
 module.exports.cityService = require("./city.service")
 module.exports.userService = require("./user.service")

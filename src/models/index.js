@@ -1,5 +1,6 @@
 module.exports.OwnerDetails = require("./ownerDetails.model")
 module.exports.RestDetails = require("./restDetails.model")
+module.exports.Country = require("./country.model")
 module.exports.State = require("./state.model")
 module.exports.City = require("./city.model")
 module.exports.User = require("./user.model")
