@@ -21,13 +21,13 @@ router.get(
 
 /**delete city */
 router.delete(
-    "/get-city/:Id",
+    "/delete-city/:Id",
     cityController.deleteCity
 );
 
 /**update city */
 router.put(
-    "/get-city/:Id",
+    "/update-city/:Id",
     cityController.updateCity
 );
 

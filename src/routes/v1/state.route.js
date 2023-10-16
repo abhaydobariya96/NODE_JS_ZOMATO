@@ -21,13 +21,13 @@ router.get(
 
 /**delete state */
 router.delete(
-    "/get-state/:Id",
+    "/delete-state/:Id",
     stateController.deleteState
 );
 
 /**update state */
 router.put(
-    "/get-state/:Id",
+    "/update-state/:Id",
     stateController.updateState
 );
 

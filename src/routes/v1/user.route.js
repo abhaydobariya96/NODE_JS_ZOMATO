@@ -21,13 +21,13 @@ router.get(
 
 /**delete user */
 router.delete(
-    "/get-user/:Id",
+    "/delete-user/:Id",
     userController.deleteUser
 );
 
 /**update user */
 router.put(
-    "/get-user/:Id",
+    "/update-user/:Id",
     userController.updateUser
 );
 
@@ -37,7 +37,4 @@ router.post(
     validate(userVallidation.sendMail),
     userController.sendMail
 );
-
-
-
 module.exports = router

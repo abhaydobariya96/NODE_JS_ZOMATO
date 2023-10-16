@@ -21,13 +21,13 @@ router.get(
 
 /**delete country */
 router.delete(
-    "/get-country/:Id",
+    "/delete-country/:Id",
     countryController.deleteCountry
 );
 
 /**update country */
 router.put(
-    "/get-country/:Id",
+    "/update-country/:Id",
     countryController.updateCountry
 );
 

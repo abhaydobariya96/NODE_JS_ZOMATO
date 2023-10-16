@@ -21,13 +21,13 @@ router.get(
 
 /**delete restorent Details */
 router.delete(
-    "/get-restDetails/:Id",
+    "/delete-restDetails/:Id",
     restDetailsController.deleteRestDetails
 );
 
 /**update restorent Details */
 router.put(
-    "/get-restDetails/:Id",
+    "/uodate-restDetails/:Id",
     restDetailsController.updateRestDetails
 );
 

@@ -9,8 +9,8 @@ const createUser = async (reqBody) => {
     return User.create(reqBody)
 };
 /**list User */
-const getUser = async (reqBody) => {
-    return User.find(reqBody)
+const getUser = async () => {
+    return User.find()
 };
 
 /**delete User */
